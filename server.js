@@ -11,26 +11,13 @@ var app = express();
 var PORT = process.env.PORT || 3000;
 
 // Sets up the Express app to handle data parsing
-
 app.use(express.json());
-app.use(express.static("public"));
+app.use(express.static("app/public"));
 app.use(express.urlencoded({ extended: true }));
 
-
-
-
 // Add the application routes
-require(path.join(__dirname, './routing/apiRoutes'))(app);
-require(path.join(__dirname, './routing/htmlRoutes'))(app);
-
-
-
-
-
-
-
-
-
+require(path.join(__dirname, '/app/routing/apiRoutes'))(app);
+require(path.join(__dirname, '/app/routing/htmlRoutes'))(app);
 
 // Starts the server to begin listening
 // =============================================================
