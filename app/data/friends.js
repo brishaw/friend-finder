@@ -114,6 +114,22 @@ var strangersArray = [
       "1",
       "3"
     ]
+  },
+  {
+    name: "Don",
+    photo: "https://timedotcom.files.wordpress.com/2016/05/trump-fail-004.jpg",
+    scores: [
+      "4",
+      "5",
+      "2",
+      "4",
+      "5",
+      "5",
+      "4",
+      "1",
+      "3",
+      "3"
+    ]
   }
 ]
 
