@@ -19,14 +19,14 @@ app.get("/api/strangers", function (req, res) {
     // Determine best match
     var findName = "";
     var findImage = "";
-    var totalDifference = 10000; // Make the initial value big for comparison
+    var totalDifference = 1000; 
     // Examine all strangers in the list
     for (var i = 0; i < strangers.length; i++) {
       var diff = 0;
       for (var j = 0; j < userResponses.length; j++) {
         diff += Math.abs(strangers[i].scores[j] - userResponses[j]);
       }
-      // Find the lowest difference, then record the strangers match
+      // Get the lowest difference, then find the strangers match
       if (diff < totalDifference) {
         totalDifference = diff;
         findName = strangers[i].name;
