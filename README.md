@@ -1,6 +1,9 @@
 ## Friend Finder ("LIPS" - Let's Introduce Perfect Strangers)
 A compatibility-based "FriendFinder" application
 
+## Link to the deployed app
+https://afternoon-shelf-51759.herokuapp.com/
+
 ## What is this repo or project?
 Friend Finder is a full-stack site which will take in results from user's surveys, then compare the answers with those from other users. The app will then display the name and picture of the user with the best overall match. 
 
