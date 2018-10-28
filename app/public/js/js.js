@@ -1,11 +1,5 @@
-
-
-
 $("#add-btn").on("click", function (event) {
   event.preventDefault();
-
-  
-  
 
   var newStranger = {
       name: $("#name").val().trim(),
@@ -22,20 +16,16 @@ $("#add-btn").on("click", function (event) {
         $('.q9').val().trim(),
         $('.q10').val().trim()
       ]
-    
   };
-   console.log("scores" + JSON.stringify(newStranger.scores));
   $.post("/api/strangers", newStranger)
     .then(function (data) {
-      console.log("survey.html", data);
+      //console.log("survey.html", data);
       //alert("Adding character...");
       $("#update").text("Adding information...");
       $('#strangerMatch').html(data.findName);
       $("#strangerImage").attr("src", data.findImage);
-      // Pop open the modal dialog
+      // Open modal 
       $('#myModal').modal("show");
     });
-  console.log("newStranger =  " + JSON.stringify(newStranger));
-  
 });
   
