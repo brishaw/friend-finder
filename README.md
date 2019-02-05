@@ -5,7 +5,7 @@ A compatibility-based "FriendFinder" application
 https://afternoon-shelf-51759.herokuapp.com/
 
 ## What is this repo or project?
-Friend Finder is a full-stack site which will take in results from user's surveys, then compare the answers with those from other users. The app will then display the name and picture of the user with the best overall match. 
+Friend Finder is a full-stack site which will take in results from user's surveys, then compares the answers with those from other users. The app will then display the name and picture of the user with the best overall match. 
 
 ## How does it work?
 Friend Finder uses Express to handle the routing and the application has been deployed to Heroku so other users can fill it out.
